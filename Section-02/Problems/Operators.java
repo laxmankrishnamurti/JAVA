@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Operators {
     public static void main(String[] args) {
 
-        // Q :: Calculate the product of input floating numbers.
+        /* Q :: Calculate the product of input floating numbers. */
 
         // Scanner input = new Scanner(System.in);
 
@@ -17,7 +17,7 @@ public class Operators {
 
         // input.close();
 
-        // Q :: Calculate Perimeter of a Rectangle.
+        /* Q :: Calculate Perimeter of a Rectangle. */
 
         // Scanner sides = new Scanner(System.in);
         // System.out.println("Enter AB : ");
@@ -64,14 +64,77 @@ public class Operators {
         // principle));
         // input.close();
 
-        // Q :: Convert Fahrenheit to Celcius
+        /* Q :: Convert Fahrenheit to Celcius */
 
-        Scanner temp = new Scanner(System.in);
-        System.out.println("Enter Fahrenheit value : ");
-        float farh = temp.nextFloat();
-        float celcius = ((farh - 32) * 5 / 9);
-        System.out.println("Celsius value is : " + celcius);
+        // Scanner temp = new Scanner(System.in);
+        // System.out.println("Enter Fahrenheit value : ");
+        // float farh = temp.nextFloat();
+        // float celcius = ((farh - 32) * 5 / 9);
+        // System.out.println("Celsius value is : " + celcius);
 
-        temp.close();
+        // temp.close();
+
+        /* Q :: Take two inputs and swap it */
+
+        // Scanner input = new Scanner(System.in);
+        // System.out.println("Enter a : ");
+        // int num1 = input.nextInt();
+        // System.out.println("Enter b : ");
+        // int num2 = input.nextInt();
+
+        // int tempNum = num1;
+        // num1 = num2;
+        // num2 = tempNum;
+
+        // System.out.println("Swapping Done.");
+        // System.out.println("a : " + num1 + " b :" + num2);
+
+        // input.close();
+
+        /*
+         * Create a Ticket discount program. The discount criteria as follow :-
+         * 
+         * - Female : 50%;
+         * - age is less than 5 get 75% OFF
+         * - age is greater than 60 get only 25% OFF
+         */
+
+        // Scanner input = new Scanner(System.in);
+        // System.out.println("Is you are female (true/false) : ");
+        // boolean isFemale = input.nextBoolean();
+        // System.out.println("Please enter your age : ");
+        // int age = input.nextInt();
+
+        // if ((age < 5)) {
+        // System.out.println("You get 75% OFF");
+        // } else if (isFemale) {
+        // System.out.println("You get 50% OFF");
+        // } else if (age > 60) {
+        // System.out.println("You only get 25% OFF");
+        // } else {
+        // System.out.println("Sorry! You don't get any discount");
+        // }
+
+        // input.close();
+
+        /* Determine the greatest of the three numbers */
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a : ");
+        int a = input.nextInt();
+        System.out.println("Enter b : ");
+        int b = input.nextInt();
+        System.out.println("Enter c : ");
+        int c = input.nextInt();
+
+        if (a > b && a > c) {
+            System.out.println("a is the greatest one");
+        } else if (b > a && b > c) {
+            System.out.println("b is the gratest one");
+        } else if (c > a && c > b) {
+            System.out.println("c is the greatest one");
+        }
+
+        input.close();
     }
 }
