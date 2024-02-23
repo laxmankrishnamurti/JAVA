@@ -119,22 +119,48 @@ public class Operators {
 
         /* Determine the greatest of the three numbers */
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter a : ");
-        int a = input.nextInt();
-        System.out.println("Enter b : ");
-        int b = input.nextInt();
-        System.out.println("Enter c : ");
-        int c = input.nextInt();
+        // Scanner input = new Scanner(System.in);
+        // System.out.println("Enter a : ");
+        // int a = input.nextInt();
+        // System.out.println("Enter b : ");
+        // int b = input.nextInt();
+        // System.out.println("Enter c : ");
+        // int c = input.nextInt();
 
-        if (a > b && a > c) {
-            System.out.println("a is the greatest one");
-        } else if (b > a && b > c) {
-            System.out.println("b is the gratest one");
-        } else if (c > a && c > b) {
-            System.out.println("c is the greatest one");
-        }
+        // if (a > b && a > c) {
+        // System.out.println("a is the greatest one");
+        // } else if (b > a && b > c) {
+        // System.out.println("b is the gratest one");
+        // } else if (c > a && c > b) {
+        // System.out.println("c is the greatest one");
+        // }
 
-        input.close();
+        // input.close();
+
+        /* BITWISE OPERATOR */
+
+        /* Q :: Pracice on Bitwise Operator */
+
+        int num1 = 2;
+        int num2 = 5;
+
+        int AND = (num1 & num2); // 0010 & 0101 = 0000 = 0
+        int OR = (num1 | num2); // 0010 | 0101 = 0111 = 7
+        int XOR = (num1 ^ num2); // 0010 ^ 0101 = 0101 = 7
+        int NOT = ~num1; // ~0010 = -3
+
+        System.out.println("AND Value : " + AND);
+        System.out.println("OR  Value : " + OR);
+        System.out.println("XOR Value : " + XOR);
+        System.out.println("NOT Value : " + NOT);
+
+        // Shifting Value
+
+        /**
+         * Left Shifting = Value increased by 2x.
+         * Right Shifting = Value decreased by 2x.
+         * 
+         * Note :: Shifting value is just any approximating value.
+         */
     }
 }
