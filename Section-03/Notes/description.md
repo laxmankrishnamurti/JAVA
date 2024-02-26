@@ -31,4 +31,19 @@ Functions is a block of code that perform a specific task. It can be used by mul
         sum = num1 + num2;
         return sum;
     }
+    addTwoNum(10, 20);
 </pre>
+
+Note :: We can't return multiple values from a method.
+
+# Parameters and Arguments?
+
+Parameter :: Parameters are the variable that we define while creating methods and we want some inputs for propar function of the method.
+
+Arguments :: Arguments the value that methods takes.
+
+Ex : let we take above example of Syntax of methods.
+
+Here,
+num1 & num2 :: Parameters and int is the type of the parameter that we are going to take.
+10 & 20 :: Arguments
