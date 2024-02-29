@@ -50,25 +50,64 @@ public class Operators {
 
     /* Sum of the input number's digits */
 
+    // public static void main(String[] args) {
+    // sumDigits();
+    // }
+
+    // public static void sumDigits() {
+    // Scanner input = new Scanner(System.in);
+    // System.out.println("Enter number : ");
+    // int number = input.nextInt();
+
+    // int sum = 0;
+    // while (number != 0) {
+    // int digit = number % 10;
+    // sum += digit;
+    // number = number / 10;
+    // }
+
+    // System.out.println("Sum of the input's digit is : " + sum);
+
+    // input.close();
+    // }
+
+    /* Find LCM of Two input number */
+
     public static void main(String[] args) {
-        sumDigits();
+        findLcm();
     }
 
-    public static void sumDigits() {
+    public static void findLcm() {
+
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter number : ");
-        int number = input.nextInt();
+        System.out.println("Enter first number : ");
+        int a = input.nextInt();
+        System.out.println("Entre second number : ");
+        int b = input.nextInt();
 
-        int sum = 0;
-        while (number != 0) {
-            int digit = number % 10;
-            sum += digit;
-            number = number / 10;
-        }
-
-        System.out.println("Sum of the input's digit is : " + sum);
+        // int lcm = (a > b) ? a : b;
+        // while (true) {
+        // if (lcm % a == 0 && lcm % b == 0) {
+        // System.out.println("LCM is : " + lcm);
+        // break;
+        // }
+        // ++lcm;
+        // }
 
         input.close();
+
+        int hcf = 1;
+
+        for (int i = 1; i <= a; ++i) {
+            if (a % i == 0 && b % i == 0) {
+                hcf = i;
+            }
+        }
+
+        System.out.println("HCF is : " + hcf);
+
+        int lcm = (a * b) / hcf;
+        System.out.println("LCM is : " + lcm);
     }
 
 }
