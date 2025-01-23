@@ -160,4 +160,3 @@ The **"Scratches and Consoles"** section is an IntelliJ IDEA feature that provid
 - **External Libraries**: Contains all the required dependencies, SDKs, and frameworks for our project.
 - **Scratches and Consoles**: A workspace for temporary scripts, experiments, SQL queries, and notes.
 
----
