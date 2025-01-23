@@ -1,6 +1,6 @@
 # Project file overview of IntelliJ IDEA.
 
-When you create a new project in **IntelliJ IDEA**, it automatically generates several configuration files and folders to manage project settings, version control, and environment preferences. Let’s break down the purpose of each file and folder in your project structure.
+When we create a new project in **IntelliJ IDEA**, it automatically generates several configuration files and folders to manage project settings, version control, and environment preferences. Let’s break down the purpose of each file and folder in our project structure.
 
 ---
 
@@ -19,7 +19,7 @@ The `.idea/` folder is where IntelliJ IDEA stores all project-specific settings.
   Contains miscellaneous project settings such as the JDK version, language level, code style, and other global project preferences.
 
 - **`modules.xml`**  
-  This file defines the modules in your project, their content roots, dependencies, and related configurations. If you're working on a multi-module project, it keeps track of different modules and their relationships.
+  This file defines the modules in our project, their content roots, dependencies, and related configurations. If we're working on a multi-module project, it keeps track of different modules and their relationships.
 
 - **`vcs.xml`**  
   Stores version control settings, such as the type of VCS (e.g., Git, SVN) used in the project, the repository URL, and any relevant settings for tracking changes.
@@ -27,10 +27,10 @@ The `.idea/` folder is where IntelliJ IDEA stores all project-specific settings.
 ---
 
 ### **2. `src/` Folder (Source Code Directory)**
-This folder is where the source code of your project is stored. IntelliJ IDEA usually creates a `Main` file by default (depending on the project type).
+This folder is where the source code of our project is stored. IntelliJ IDEA usually creates a `Main` file by default (depending on the project type).
 
 - **`Main` (or `Main.java` / `Main.kt` / `Main.py`, etc.)**  
-  This is the main entry point of your application, containing the primary logic that runs when the application starts. In Java projects, for example, it's where the `public static void main(String[] args)` method resides.
+  This is the main entry point of our application, containing the primary logic that runs when the application starts. In Java projects, for example, it's where the `public static void main(String[] args)` method resides.
 
 ---
 
@@ -68,16 +68,14 @@ The `.iml` file is an IntelliJ IDEA **module file**, which contains metadata abo
 - Module SDK (Java, Kotlin, Python, etc.)
 - Dependencies (libraries, frameworks)
 
-This file helps IntelliJ manage the structure and build process of your project.
+This file helps IntelliJ manage the structure and build process of our project.
 
 ---
 
 ### **Why Are These Files Important?**
-1. **Project Configuration:** The `.idea/` folder keeps your project environment consistent across different machines using IntelliJ.
+1. **Project Configuration:** The `.idea/` folder keeps our project environment consistent across different machines using IntelliJ.
 2. **Version Control:** The `.gitignore` file ensures only necessary files are tracked.
-3. **Module Management:** The `.iml` file helps IntelliJ organize and compile your code properly.
-4. **Code Structure:** The `src/` folder is the foundation where your project’s logic resides.
+3. **Module Management:** The `.iml` file helps IntelliJ organize and compile our code properly.
+4. **Code Structure:** The `src/` folder is the foundation where our project’s logic resides.
 
 ---
-
-Let me know if you'd like further clarification on any of these files!
